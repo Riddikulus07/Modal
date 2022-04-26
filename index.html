@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="a.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Oreo Stop</h1>
+        <div class="img-contain">
+            <div class="image"><img src="https://static.onecms.io/wp-content/uploads/sites/19/2021/08/12/oreo-hero.jpg" alt=""></div>
+            <div class="image"><img src="https://www.whiskaffair.com/wp-content/uploads/2020/07/Oreo-Milkshake-2-3.jpg" alt=""></div>
+            <div class="image"><img src="https://www.fnp.com/images/pr/l/v20190702185152/oreo-cake-1kg_1.jpg" alt=""></div>
+            <div class="image"><img src="https://i.pinimg.com/736x/5b/0a/66/5b0a6608e3b3b7aec434aa6179dce955--homemade-oreos-homemade-ice-cream.jpg" alt=""></div>
+            <div class="image"><img src="https://insanelygoodrecipes.com/wp-content/uploads/2021/05/Homemade-No-Bake-Oreo-Cheesecake-500x375.png" alt=""></div>
+            <div class="image"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/chocolate-covered-oreos-vertical-1547769854.jpg" alt=""></div>
+        
+        </div>
+        <div class="pop-up">
+            <span>&times;</span>
+            <img src="https://static.onecms.io/wp-content/uploads/sites/19/2021/08/12/oreo-hero.jpg" alt="">
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.img-contain img').forEach (image =>{
+       image.onclick=()=>{
+        document.querySelector('.pop-up').style.display='block';
+        document.querySelector('.pop-up img').src=image.getAttribute('src');
+       }
+        })
+        document.querySelector('.pop-up span ').onclick =() =>{
+            document.querySelector('.pop-up').style.display='none';
+            
+        }
+    </script>
+</body>
+</html>
